@@ -22,8 +22,8 @@ app.post("/enviar-email", async (req, res) => {
 
   let info = await transporter.sendMail({
     from: "contatopets@petsmellon.com.br",
-    to: "benolopesdias@gmail.com",
-    subject: "Contato pela Landing Page",
+    to: "site@patense.com.br",
+    subject: "Contato pela Landing Page (BR)",
     html: `
         <p><strong>Nome:</strong> ${nome}</p>
         <p><strong>Email:</strong> ${email}</p>
