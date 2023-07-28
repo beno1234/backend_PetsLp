@@ -22,7 +22,7 @@ app.post("/enviar-email", async (req, res) => {
 
   let info = await transporter.sendMail({
     from: "contatopets@petsmellon.com.br",
-    to: "site@patense.com.br",
+    to: ["vendas@patense.com.br", "contas@bmouseproductions.com"],
     subject: "Contato pela Landing Page (BR)",
     html: `
         <p><strong>Nome:</strong> ${nome}</p>
